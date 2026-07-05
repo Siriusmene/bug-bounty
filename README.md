@@ -49,7 +49,7 @@ Reports about TVM issues, in particular "crash due to some OPCODE usage", "expon
 
 Explicitly out-of-scope:
 - issues related to non-final LS
-- issues related to Ton Storage, Payment Channels, and rldp-http-proxy
+- issues related to Ton Storage, Payment Channels, http-proxy and rldp-http-proxy
 - issues related to blockchain explorer (C++ based from monorepo)
 - issues related to incorrect configuration of validator control interface
 - ability to crash libemulator by supplying incorrect data
