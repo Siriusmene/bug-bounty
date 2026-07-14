@@ -1,10 +1,10 @@
 # TON security bug bounty
 
-If you find a critical bug or vulnerability in the TON Blockchain (in the C++ code of the main repository) or TON main services (standard wallets, standard smart contracts), you can send its description and exploitation scenario and receive a reward.
+If you find a critical bug or vulnerability in the TON Blockchain (in the C++ code of the main repository) or TON standard smart contracts, you can send its description and exploitation scenario and receive a reward.
 
 We are interested in critical vulnerabilities: crash, loss/theft of coins, etc.
 
-You can target a reward of up to $100,000 in Toncoins for vulnerability, depending on the severity; large bounties for severe vulnerabilities are given with 1 year lock-up.
+You can target a reward of up to $100,000 in Toncoins or USDt for vulnerability, depending on the severity; large bounties for severe vulnerabilities are given with 1 year lock-up.
 
 Let's perfect the safety and security of TON together!
 
@@ -31,13 +31,14 @@ The following are generally out of scope or will not be accepted without a clear
 - Sybil attack for public overlay
 - TON-ETH, TON-BSC, and TON-Eth-token bridges are [deprecated](https://t.me/tonstatus/215) and are out of the scope now.
 
+
 # Priority list:
 
 ## TON Blockchain Core (C++)
 
 https://github.com/ton-blockchain/ton.
 
-Simplex, ~Catchain,~ Validator Node, Full Node, DHT Node, TonLib, ~FunC compiler, Fift compiler~ **(issues in **FunC** and **Fift** that do not cause critical problems during normal node operation are no longer in scope for this bug bounty)**. 
+Simplex, Validator Node, Full Node, DHT Node. 
 
 The testnet branch is considered experimental and often undergoes tests and audits. We are interested in identifying problems at this stage, thus bugs in the testnet branch are accepted, in some cases report review maybe postponed till the end of audit/tests (you will be immediately notified upon report submission).
 
@@ -53,7 +54,10 @@ Explicitly out-of-scope:
 - issues related to blockchain explorer (C++ based from monorepo)
 - issues related to incorrect configuration of validator control interface
 - ability to crash libemulator by supplying incorrect data
-
+- TonLib
+- FunC compiler
+- Fift compiler
+- Catchain 1.0
 
 ## Smart Contracts (FunC)
 
