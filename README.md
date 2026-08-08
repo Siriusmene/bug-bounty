@@ -4,7 +4,7 @@ If you find a critical bug or vulnerability in the TON Blockchain (in the C++ co
 
 We are interested in critical vulnerabilities: crash, loss/theft of coins, etc.
 
-You can target a reward of up to $100,000 in Toncoins or USDt for vulnerability, depending on the severity; large bounties for severe vulnerabilities are given with 1 year lock-up.
+You can target a reward of up to $100,000 in Grams or USDt for vulnerability, depending on the severity; large bounties for severe vulnerabilities are given with 1 year lock-up.
 
 Let's perfect the safety and security of TON together!
 
@@ -12,9 +12,16 @@ Send general reports to [@ton_bugs_bot](https://t.me/ton_bugs_bot). Reports abou
 
 _We reserve the right not to review some reports._
 
+⚠️ Due to spam in the bug bounty program caused by LLM-generated reports, we are currently experiencing delays in processing your submissions. 
+We are doing everything we can to process your submissions as quickly as possible, and most reports are processed within 90 days.
+
 ## Out of scope / not accepted cases
 
 The following are generally out of scope or will not be accepted without a clear escalation to a real security impact on normal network/service operation:
+
+- Any minor attacks or bugs that do not cause a node crash, blockchain stoppage, loss/theft of coins, or an incorrect change to the blockchain state.
+
+- Any attacks initiated by a validator.
 
 - Issues that require the attacker to already control the local host, local files/libraries, runtime parameters, environment variables, startup flags, or other trusted operator inputs.
 - Issues that require the attacker to already control majority of honest validators, including issues related to malformed blocks signed by the quorum, incorrect network config parameters (require validators voting for them to be accepted). Often under such conditions errors cause CHECK() and node crash: this is intended behavior, where under malfunctioning quorum it is better to halt rather then continue operation.
